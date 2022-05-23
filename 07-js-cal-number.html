@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--นายปาณรวัฐ ชาลี-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    input number : = <input type="text" name="num1" id="num1"  style="width: 50px;">
+    <br>
+    input number : = <input type="text" name="num2" id="num2"  style="width: 50px;">
+    <br>
+    <br>
+    <button style="width: 30px;" onclick="sum()">+</button>
+    <button style="width: 30px;" onclick="minus()">-</button>
+    <button style="width: 30px;" onclick="multiply()">*</button>
+    <button style="width: 30px;" onclick="devide()">/</button>
+    <br>
+    <br>
+     <!-- <p id="output">Ans = </p> -->
+     Ans = <span id="output"></span>
+
+    <script>
+        function sum(params){
+            document.getElementById('output').innerHTML = 
+            (parseInt(document.getElementById('num1').value) +  
+            parseInt(document.getElementById('num2').value))
+
+        }
+        function minus(params){
+            document.getElementById('output').innerHTML = 
+            (parseInt(document.getElementById('num1').value) -  
+            parseInt(document.getElementById('num2').value))
+
+        }
+        function multiply(params){
+            document.getElementById('output').innerHTML = 
+            (parseInt(document.getElementById('num1').value) *  
+            parseInt(document.getElementById('num2').value))
+
+        }
+        function devide(params){
+            document.getElementById('output').innerHTML = 
+            (parseInt(document.getElementById('num1').value) / 
+            parseInt(document.getElementById('num2').value))
+
+        }
+    </script>
+    
+</body>
+</html>
